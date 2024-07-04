@@ -81,3 +81,46 @@ for (let price of prices){
     finalPrice+=price;
 }
 console.log("The final price after applying offer is: "+finalPrice);
+
+
+
+
+//ARRAY METHODS
+//push(): add to end
+//pop(): delete from end & return
+//toString(): convert array to string, etc......
+
+let foodItems = ["burger","pizza","sandwich","fries","cake"];
+console.log(foodItems);
+foodItems.push("chips", "icecream", "coke");
+console.log(foodItems);
+foodItems.pop();
+console.log(foodItems);
+console.log(foodItems.toString());
+
+//concat(): joins multiple array and returns a new result
+
+let marvel = ["ironman","thor","hulk"];
+console.log(marvel);
+let dc = ["superman","batman","flash"];
+console.log(dc);
+console.log(marvel.concat(dc));
+
+//unshift(): add to start
+//shift(): delete from start & return
+
+let demo = ["a","b","c","d"];
+console.log(demo);
+demo.unshift("e");
+console.log(demo);
+demo.shift();
+console.log(demo);
+
+//slice(): returns a part of array
+//splice(): add or remove or replace elements from array
+
+console.log(demo.slice(2,3));
+
+let f=[1,2,3,4,5,6];
+f.splice(1,2,9,10);
+console.log(f);
