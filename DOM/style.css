@@ -1,0 +1,25 @@
+/* In css id is represented by # and class is represented by . */
+
+h1{
+    color: #092a66;
+    font-size: 70px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+body{
+    background-color: #fffb04;
+}
+
+button{
+    background-color: red;
+    color: #ffffff;
+}
+
+p{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+}
