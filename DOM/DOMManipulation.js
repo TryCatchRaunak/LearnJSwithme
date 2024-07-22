@@ -60,3 +60,53 @@ console.dir(div.innerHTML = "<div>inner div</div>");//we can transform HTML
 let headingHidden = document.querySelector("h2");
 console.log(headingHidden.innerText);//returns text content of a hidden element
 console.dir(headingHidden.textContent);//returns text content of a hidden element
+
+
+
+
+
+
+//ATTRIBUTES OF ELEMENTS
+
+//1. getAttribute(aatr): returns the value of the attribute
+let div = document.querySelector("div");
+console.log(div);
+let id = div.getAttribute("id");
+console.log(id);
+
+//2. setAttribute(attr, value): sets the value of the attribute
+let section = document.querySelector("section");
+console.log(section);
+let setAttr = section.setAttribute("name", "timePass");
+console.log(section.getAttribute("name"));
+
+
+
+
+
+
+//STYLING ELEMENTS
+let divStyle = document.querySelector("div");
+divStyle.style.backgroundColor = "red";
+divStyle.style.fontSize = "34px";
+
+
+
+
+
+
+//INSERTING ELEMENTS
+//Before inserting we need to create elements
+let newBtn = document.createElement("button");
+newBtn.innerText = "Click Me";
+divStyle.append(newBtn);//adds element at the end of the parent element
+
+divStyle.prepend(newBtn);//adds element at the start of the parent element
+
+let newDiv = document.createElement("div");
+newDiv.innerText = "This is a new div";
+divStyle.before(newDiv);//adds element before the parent element
+
+divStyle.after(newDiv);//adds element after the parent element
+
+newDiv.remove();//removes the element from the DOM
