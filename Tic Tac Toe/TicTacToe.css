@@ -1,0 +1,24 @@
+body{
+    border: 0;
+    padding: 1;
+    background-image: linear-gradient(to bottom right, rgb(2, 9, 15), rgb(4, 33, 58));
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: rgb(2, 9, 15);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(4, 33, 58);
+    border-radius: 7px;
+}
+
+#heading{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
