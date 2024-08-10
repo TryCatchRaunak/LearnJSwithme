@@ -1,6 +1,8 @@
 let boxes = document.querySelectorAll('.box');
 let reset = document.querySelector('#reset-btn');
 let turnMessage = document.querySelector('#turn');
+let counter = 0;
+
 
 let turnO = true; // playerO
 
@@ -17,6 +19,7 @@ reset.addEventListener('click', () => {
 boxes.forEach((box) => {
   box.addEventListener('click' , () => {
     console.log('Box was Clicked');
+    counter++;
     if (turnO) {
       box.innerText = 'O';
       turnO = false;
@@ -25,6 +28,11 @@ boxes.forEach((box) => {
       box.innerText = 'X';
       turnO = true;
       turnMessage.innerText = "O's Turn";
+    }
+    if(box.innerText === 'O'){
+        box.style.color = 'red';
+    }else{
+        box.style.color = 'green';
     }
     box.disabled = true;
 
@@ -47,6 +55,9 @@ const checkWinner = () => {
             console.log('Winner', posn1);
             turnMessage.innerText = `Congratulations! ${posn1} Wins!`;
             disableBoxes();
+        }
+        if(counter === 9 && posn1 != posn2 && posn2 != posn3) {
+            turnMessage.innerText = 'It\'s a Draw!';
         }
     }
   }
