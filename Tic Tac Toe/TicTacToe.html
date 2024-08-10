@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TicTacToe.css">
 </head>
-<link rel="stylesheet" href="TicTacToe.css">
-<body>
-    <h1 id="heading"><i>TIC.TAC.TOE</i></h1>
-    <div id="gameMesh">
 
-    </div>
+<body>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <h4 id="turn">O's Turn</h4>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </main>
     <script src="app.js"></script>
 </body>
+
 </html>
