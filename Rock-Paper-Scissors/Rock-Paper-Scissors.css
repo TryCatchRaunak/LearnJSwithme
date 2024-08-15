@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 body{
@@ -16,4 +17,66 @@ body{
     font-size: 6vh;
     color: tomato;
     font-family: 'Rock Salt', cursive;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: rgb(65, 4, 4);
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 1rem;
+    gap: 5rem;
+}
+
+#userScore, #compScore{
+    font-size: 70px;
+}
+#userScore{
+    color: green;
+}
+#compScore{
+    color: red;
+}
+
+
+.messageContainer{
+    margin-top: 20px;
+}
+#message{
+    font-size: 3rem;
+    color: blueviolet;
+    background-color: rgb(243, 216, 8);
+    display: inline;
+    padding: 0.6rem;
+    border-radius: 1rem;
 }
