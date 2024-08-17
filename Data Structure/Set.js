@@ -28,3 +28,11 @@ console.log(obj);
 
 console.log(obj.has(4));
 console.log(obj.has(9));
+
+for (let new1 of obj){
+    console.log(new1);
+}
+
+obj.forEach((element) => {
+    console.log(element);
+});
